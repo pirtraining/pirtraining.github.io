@@ -4,7 +4,7 @@
     <title>Post Incident Review Training</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
@@ -22,295 +22,25 @@
     </div>
 
     <div class="row">
-      <div class="side">
-        <p>
-          <a href="unit1lesson1.html">Introduction</a><br>
-          <a href="unit1lesson1.html">Lesson Objectives</a><br>
-          <a href="unit1lesson1.html">Complexity</a><br>
-          <a href="unit1lesson1.html" style="padding-left: 20px;"><i>Incident Examples</i></a><br>
-          <a href="unit1lesson1.html">Causation</a><br>
-          <a href="unit1lesson1.html" style="padding-left: 20px;"><i>Domino Model</i></a><br>
-          <a href="unit1lesson1.html" style="padding-left: 20px;"><i>Swiss Cheese Model</i></a><br>
-          <a href="unit1lesson1.html">Learning</a><br>
-          <a href="unit1lesson1.html" style="padding-left: 20px;"><i>Team Safety</i></a><br>
-          <a href="unit1lesson1.html" style="padding-left: 20px;"><i>PIR Leader</i></a><br>
-          <a href="unit1lesson1.html">Knowledge Check</a><br>
-          <a href="unit1lesson1.html">Additional Resources</a><br>
-        </p>
+      <div class="home-splitscreen">
+        <div style="text-align:center">
+          <h2>Foundations of Post Incident Reviews</h2>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h3>More Text</h3>
+        <p>Lorem ipsum dolor sit ame.</p>
+        <a href="unit1lesson1.html" class="button">Start Unit 1</a>
       </div>
-      <div class="main">
-        <h2>Reviewing Incidents</h2>
-        <div class="attention-container">
-          <div class="attention-item">
-            <h3>“It takes many factors, all necessary and only jointly sufficient, to push a system over the edge of failure.”</h3>
-            <br>
-            <p style="text-align:right">—Dekker (2013, p.33) (fact check)</p>
-          </div>
+      <div class="home-splitscreen">
+        <div style="text-align:center">
+          <h2>Conducting an Incident Review</h2>
         </div>
-        <h3>Introduction</h3>
-        <p>
-          When software fails, we have been taught to search for a single root cause to explain what went wrong. Now, thinking has changed.
-        </p>
-        <p>
-          With increasingly complex systems we must seek multiple contributing factors. 
-          And as we unravel these factors, rather than blame or point fingers, we have to take an approach that fosters learning and information sharing. 
-          Throughout this lesson, we will refer to this approach as a Post-Incident Review (PIR).
-        </p>
-        <br>
-        <hr style="width:100%; height:6px; background-color: #EEEEEE; border:none;">
-        <br>
-        <h3>Lesson Objectives</h3>
-        <p>
-          After studying this lesson and the relevant recommended readings, students should be able to:
-        </p>
-        <ul style="padding-left: 30px;">
-          <li>List, in writing, examples of IT incidents.</li>
-          <li>Explain, in writing, the purpose of a PIR.</li>
-          <li>Provide, in writing, the definition of a PIR.</li>
-        </ul>
-        <p>
-          By sharing knowledge of the system, Engineers will be empowered to make their jobs easier.
-          By establishing a commitment to continuous improvement, Management will build trust and resilience among teams.
-          By producing thorough records of incidents, Organisations will discover patterns that will inform effective remediation measures and improve how future incidents are handled.
-        </p>
-        <br>
-        <hr style="width:100%; height:6px; background-color: #EEEEEE; border:none;">
-        <br>
-        <h3>Complexity</h3>
-        <p>
-          Modern IT companies build software models of interrelated, increasingly automated services.
-          Customers expect these services to run <b>24</b> hours a day, <b>365</b> days a year.
-          Growing expectations have accelerated the <b>complexity</b> of these systems.
-          As software complexity increases, it becomes inevitable that the systems will <b>surprise</b> us from time to time.
-          Let’s refer to these surprises as <b>incidents</b>.
-          Incidents are signals sent by the system to tell us <b>where complexity exists</b>.
-          Example 1.1 illustrates some examples of IT incidents.
-        </p>
-        <p>
-          <b style="color:#575757"> Example 1.1 Typical IT Incidents:</b>
-        </p>
-        <div class="overlap-container">
-          <div class="block" 
-               style="top: 30px; 
-                      left: 30px;"> 
-              <h2>Service Outages</h2> 
-              <div class="block-content"> 
-                  <p>An unplanned interruption or reduction in the quality of an IT service.</p> 
-              </div> 
-          </div> 
-          <div class="block" 
-               style="top: 130px; 
-                      left: 160px;"> 
-              <h2>Hardware Failures</h2> 
-              <div class="block-content"> 
-                  <p>The malfunction or breakdown of a computer's physical components.</p> 
-              </div> 
-          </div> 
-          <div class="block" 
-               style="top: 230px;  
-                      left: 290px;"> 
-              <h2>Software Bugs</h2> 
-              <div class="block-content"> 
-                  <p>An error, flaw, or unintended behaviour in a software application that causes it to produce incorrect or unexpected results.</p> 
-              </div> 
-          </div> 
-          <div class="block" 
-               style="top: 330px;  
-                      left: 420px;"> 
-              <h2>Security Threats</h2> 
-              <div class="block-content"> 
-                  <p>An event that jeopardises the confidentiality or integrity of an information system or the information it processes, stores, or transmits.</p> 
-              </div> 
-          </div> 
-          <div class="block" 
-               style="top: 430px;  
-                      left: 550px;"> 
-              <h2>Deployment Issues</h2> 
-              <div class="block-content"> 
-                  <p>A disruption to normal IT services caused by releasing a software or system update.</p> 
-              </div> 
-          </div> 
-        </div>
-        <br>
-        <hr style="width:100%; height:6px; background-color: #EEEEEE; border:none;">
-        <br>
-        <div class="text-container">
-          <div class="text-item">
-            <h4>
-              <svg height="20px" width="20px" version="1.1" id="_x32_0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
-                <g id="SVGRepo_iconCarrier_0">
-                  <style type="text/css"> .st0{fill:#000000;}
-                  </style>
-                  <g>
-                    <path class="st0" d="M491.103,490.634l-12.05-86.739c-0.925-6.66-6.167-11.902-12.85-12.818l-33.622-4.655l-0.016-0.023 l-4.646-33.598c-0.916-6.676-6.166-11.934-12.843-12.843l-22.182-3.064c-6.731-0.932-12.02-6.26-12.874-12.999l-7.193-56.494 c-0.423-3.322-1.927-6.378-4.286-8.744l-35.769-35.762l-89.129,89.137l195.559,195.566c3.416,3.416,8.267,4.983,13.03,4.208 l26.351-4.247C486.66,506.258,492.224,498.736,491.103,490.634z M445.367,467.456L279.6,301.696l12.826-12.826l165.768,165.76 L445.367,467.456z"></path><path class="st0" d="M369.159,133.852L241.801,6.493c-8.658-8.658-22.7-8.658-31.358,0L27.241,189.703 c-8.65,8.65-8.65,22.691,0,31.342L154.6,348.412c8.666,8.658,22.699,8.658,31.358,0L369.159,165.21 C377.818,156.552,377.818,142.51,369.159,133.852z M205.201,133.499l-50.954,50.954c-7.569,7.57-19.855,7.57-27.432-0.008 c-7.577-7.576-7.57-19.862-0.008-27.432l50.962-50.954c7.569-7.57,19.847-7.577,27.432,0.008 C212.771,113.636,212.771,125.931,205.201,133.499z">
-                    </path>
-                  </g>
-                </g>
-              </svg>
-              Key Point: Incidents are coded signals sent by the system to tell us where complexity exists.
-            </h4>
-          </div>
-        </div>
-        <br>
-        <hr style="width:100%; height:6px; background-color: #EEEEEE; border:none;">
-        <br>
-        <h3>Causation</h3>
-        <p>
-          The practice of analysing an incident is not new, and a common approach to incident reviews is <b>root cause analysis</b> (RCA). 
-          RCA presumes that an incident cascades from a <b>single causal event</b>. 
-          Once an organisation discovers that cause, it can take steps to ensure it never happens again.
-          The concept of incidents resulting from a <b>sequential chain of events</b> is best visualised by Heinrich’s (1931) “<b>five domino model</b>” of accident causation (Figure 1.1):
-        </p>
-        <p>
-          <b style="color:#575757"> Figure 1.1 Heinrich’s (1931) five domino model of accident causation:</b>
-        </p>
-        <div class="attention_img" style="height:300px; background-color: #EEEEEE;">
-        </div>
-        <p>
-          It is tempting to imagine an incident as a progression of events that we can trace back to the first domino. 
-          The concept is easy to explain, and the thought of reducing an incident to a single event is compellingly simple.
-          However, <b>identifying a single root cause can be misleading</b>. 
-          As safety researcher Sidney Dekker describes:
-        </p>
-        <div class="text-container" style="background-color: #DDDDDD"> 
-          <div class="text-item">
-            <p>
-              “Cause is not something you find. Cause is something you construct. How you construct it and from what evidence, depends on where you look, what you look for, who you talk to, what you have seen before, and likely on who you work for.” (Dekker 2017).
-            </p>
-          </div>
-        </div>
-        <p>
-          A popular approach to RCA is to repeatedly ask <b>“why”</b> until a root cause is agreed upon. 
-          Focusing on one arbitrarily determined “root cause” is <b>not</b> a reliable method for driving improvement. 
-          Reducing an incident to a single event <b>purposely discards the vast majority of what we could learn</b> about how the system actually works.
-        </p>
-        <p>
-          Modern software is a <b>tangled ecosystem</b> of human procedures, physical infrastructure, networking logic, quality measures, safety mechanisms, fallback systems, and code. 
-          It is often the case that <b>multiple conditions must align</b> in order for an incident to occur.
-          James Reason’s “<b>swiss cheese</b>” model of accident causation (Figure 1.2) offers an improved visualisation for <b>how incidents actually transpire</b>:
-        </p>
-        <p>
-          <b style="color:#575757"> Figure 1.2 Reason’s swiss cheese model of accident causation:</b>
-        </p>
-        <div class="attention_img" style="height:300px; background-color: #EEEEEE;">
-        </div>
-        <p>
-          An incident <b>helps</b> us to make sense of this complex system by telling us <b>where the weaknesses are</b>.
-          An RCA asks <b>why</b> the system surprised us this <b>once</b>. 
-          A <b>Post-Incident Review (PIR)</b> takes the opportunity to <b>learn about how</b> the system <b>usually operates successfully</b> (Hollnagel).
-          A PIR enables us to understand <b>all</b> of the conditions necessary to create an incident.
-          This approach provides a foundation for addressing a <b>range</b> of contributing factors, not just the “root cause.”
-        </p>
-        <br>
-        <hr style="width:100%; height:6px; background-color: #EEEEEE; border:none;">
-        <br>
-        <div class="text-container">
-          <div class="text-item">
-            <h4>
-              <svg height="20px" width="20px" version="1.1" id="_x32_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
-                <g id="SVGRepo_iconCarrier_1">
-                  <style type="text/css"> .st0{fill:#000000;}
-                  </style>
-                  <g>
-                    <path class="st0" d="M491.103,490.634l-12.05-86.739c-0.925-6.66-6.167-11.902-12.85-12.818l-33.622-4.655l-0.016-0.023 l-4.646-33.598c-0.916-6.676-6.166-11.934-12.843-12.843l-22.182-3.064c-6.731-0.932-12.02-6.26-12.874-12.999l-7.193-56.494 c-0.423-3.322-1.927-6.378-4.286-8.744l-35.769-35.762l-89.129,89.137l195.559,195.566c3.416,3.416,8.267,4.983,13.03,4.208 l26.351-4.247C486.66,506.258,492.224,498.736,491.103,490.634z M445.367,467.456L279.6,301.696l12.826-12.826l165.768,165.76 L445.367,467.456z"></path><path class="st0" d="M369.159,133.852L241.801,6.493c-8.658-8.658-22.7-8.658-31.358,0L27.241,189.703 c-8.65,8.65-8.65,22.691,0,31.342L154.6,348.412c8.666,8.658,22.699,8.658,31.358,0L369.159,165.21 C377.818,156.552,377.818,142.51,369.159,133.852z M205.201,133.499l-50.954,50.954c-7.569,7.57-19.855,7.57-27.432-0.008 c-7.577-7.576-7.57-19.862-0.008-27.432l50.962-50.954c7.569-7.57,19.847-7.577,27.432,0.008 C212.771,113.636,212.771,125.931,205.201,133.499z">
-                    </path>
-                  </g>
-                </g>
-              </svg>
-              Key Point: The purpose of a PIR is to learn as much as we can about how an incident unfolded in a relatively short period of time.
-            </h4>
-          </div>
-        </div>
-        <br>
-        <hr style="width:100%; height:6px; background-color: #EEEEEE; border:none;">
-        <br>
-        <h3>Learning</h3>
-        <p>
-          <b>Learning</b> from an incident comes from <b>gathering data</b> and facilitating a <b>group discussion</b> focused on discovery and remediation.
-          This process is an opportunity to learn from people who have gained expertise in an area of complexity-<b>let's enable those experts to be teachers</b>.
-        </p>
-        <p>
-          Incidents can be stressful situations and those involved may be reluctant to relive them.
-          In order to promote teachers, we must encourage <b>team psychological safety</b>.
-          Team psychological safety describes a sense of confidence that the team will not embarrass, reject, or punish someone for speaking up on ideas, concerns, or questions (Edmondson 1999).
-          This confidence stems from mutual <b>respect</b> and <b>trust</b> among team members (see Figure 1.3).
-        </p>
-        <p>
-          <b style="color:#575757"> Figure 1.3 Characteristics of groups with and without team psychological safety:</b>
-        </p>
-        <div class="flip-card" tabIndex="0">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <b><i style="font-size:2.0582em;">With</i></b> 
-              <b><i style="font-size:1.618em; line-height:75%;">Team Psychological Safety</i></b> 
-              <div class="text-item-rounded">
-                <p>
-                  Teams can <b>experiment</b> and <b>grow</b> 
-                </p>
-                <p>
-                  Teams can <b>challenge each other</b> to reach more informed decisions
-                </p>
-                <p>
-                  Teams can <b>continuously improve</b>
-                </p>
-              </div>
-            </div>
-            <div class="flip-card-back">
-              <b><i style="font-size:2.0582em;">Without</i></b> 
-              <b><i style="font-size:1.618em; line-height:75%;">Team Psychological Safety</i></b> 
-              <div class="text-item-rounded">
-                <p>
-                  Teams are <b>reactive</b> and <b>hesitant</b> 
-                </p>
-                <p>
-                  Teams are <b>scared to challenge</b> the established way of doing things
-                </p>
-                <p>
-                  Teams <b>preserve the status quo</b>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p>
-          The first step towards building respect and trust in the wake of an incident is asking a <b>PIR leader</b> to guide a group of incident participants though the learning process.
-          A PIR Leader has two core responsibilities:      
-        </p>
-        <ol style="padding-left: 30px;">
-          <li>To prepare a document that captures the details of the PIR—<b>the PIR report;</b></li>
-          <li>To facilitate a group discussion between those closest to the incident—<b>the PIR meeting.</b></li>
-        </ol>
-        <p>
-          A PIR leader fosters an atmosphere of team psychological safety through their use of <b>language</b>.
-          In the next lesson we will explore this language in more detail.
-        </p>
-        <br>
-        <hr style="width:100%; height:6px; background-color: #EEEEEE; border:none;">
-        <br>
-        <div class="text-container">
-          <div class="text-item">
-            <h4>
-              <svg height="20px" width="20px" version="1.1" id="_x32_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
-                <g id="SVGRepo_iconCarrier_2">
-                  <style type="text/css"> .st0{fill:#000000;}
-                  </style>
-                  <g>
-                    <path class="st0" d="M491.103,490.634l-12.05-86.739c-0.925-6.66-6.167-11.902-12.85-12.818l-33.622-4.655l-0.016-0.023 l-4.646-33.598c-0.916-6.676-6.166-11.934-12.843-12.843l-22.182-3.064c-6.731-0.932-12.02-6.26-12.874-12.999l-7.193-56.494 c-0.423-3.322-1.927-6.378-4.286-8.744l-35.769-35.762l-89.129,89.137l195.559,195.566c3.416,3.416,8.267,4.983,13.03,4.208 l26.351-4.247C486.66,506.258,492.224,498.736,491.103,490.634z M445.367,467.456L279.6,301.696l12.826-12.826l165.768,165.76 L445.367,467.456z"></path><path class="st0" d="M369.159,133.852L241.801,6.493c-8.658-8.658-22.7-8.658-31.358,0L27.241,189.703 c-8.65,8.65-8.65,22.691,0,31.342L154.6,348.412c8.666,8.658,22.699,8.658,31.358,0L369.159,165.21 C377.818,156.552,377.818,142.51,369.159,133.852z M205.201,133.499l-50.954,50.954c-7.569,7.57-19.855,7.57-27.432-0.008 c-7.577-7.576-7.57-19.862-0.008-27.432l50.962-50.954c7.569-7.57,19.847-7.577,27.432,0.008 C212.771,113.636,212.771,125.931,205.201,133.499z">
-                    </path>
-                  </g>
-                </g>
-              </svg>
-              Key Point: A PIR is a template for conducting a group interview to learn from an incident in an environment of team psychological safety.
-            </h4>
-          </div>
-        </div>
-        <br>
-        <a href="unit1lesson2.html" class="button">Next lesson &#8594; </a>
-
-        <br>
-        <br>
-        <hr style="width:100%; height:6px; background-color: #EEEEEE; border:none;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h3>More Text</h3>
+        <p>Lorem ipsum dolor sit ame.</p>
+        <a href="unit2lesson1.html" class="button">Start Unit 2</a>
       </div>
     </div>
+
   </body>
 </html>
