@@ -10,7 +10,7 @@
   <body>
     <div class="header">
       <h1>Post Incident Review Training</h1>
-      <p>A guide to learning from surprises</p>
+      <h4 style="font-weight: normal; line-height: 75%; padding-bottom: 10px;">A guide to learning from surprises</h4>
     </div>
 
     <div class="navbar">
@@ -24,31 +24,117 @@
     <div class="row">
       <div class="side">
         <p>
-          <a href="unit2lesson2.html">Introduction</a><br>
-          <a href="unit2lesson2.html">Lesson Objectives</a><br>
-          <a href="unit2lesson2topic1.html">Before the Meeting</a><br>
-          <a href="unit2lesson2topic1.html" style="padding-left: 20px;"><i>Coordinate</i></a><br>
-          <a href="unit2lesson2topic2.html">During the Meeting</a><br>
-          <a href="unit2lesson2topic2.html" style="padding-left: 20px;"><i>Timeline</i></a><br>
-          <a href="unit2lesson2topic2.html" style="padding-left: 20px;"><i>Discussion</i></a><br>
-          <a href="unit2lesson2topic3.html">After the Meeting</a><br>
-          <a href="unit2lesson2topic3.html" style="padding-left: 20px;"><i>Share</i></a><br>
-          <a href="unit2lesson2topic3.html" style="padding-left: 20px;"><i>Follow Up</i></a><br>
-          <a href="unit2lesson2knowledge.html">Knowledge Check</a><br>
-          <a href="unit2lesson2additional.html">Additional Resources</a><br>
+          <a class="special-link" href="unit2lesson2.html">Introduction</a><br>
+          <a class="special-link" href="unit2lesson2.html#section-1" style="padding-left: 20px;"><i>Lesson Objectives</i></a><br>
+          <a class="special-link" href="unit2lesson2topic1.html">Before the Meeting</a><br>
+          <a class="special-link" href="unit2lesson2topic2.html">During the Meeting</a><br>
+          <a class="special-link" href="unit2lesson2topic3.html">After the Meeting</a><br>
+          <a class="special-link" href="unit2lesson2knowledge.html">Knowledge Check</a><br>
+          <a class="special-link" href="unit2lesson2additional.html">Additional Resources</a><br>
         </p>
       </div>
       <div class="main">
-        <h2>Placeholder</h2>
+        <h2>Knowledge Check</h2>
+        <form method="POST" class="is-not-results">
+          <fieldset>
+            <legend>When is the best time to hold a PIR meeting?</legend>
+            <div class="answers">
+              <div class="answer">
+                <input type="radio" name="answers[0]" id="answer-0-1" value="1" required>
+                <label for="answer-0-1" class="answer__item">
+                A PIR meeting should take place while the incident is ongoing.
+                </label>
+              </div>
+              <div class="answer">
+                <input type="radio" name="answers[0]" id="answer-0-2" value="2" required>
+                <label for="answer-0-2" class="answer__item">
+                A PIR meeting should take place immediately after the incident is resolved.
+                </label>
+              </div>
+              <div class="answer">
+                <input type="radio" name="answers[0]" id="answer-0-3" value="3" required>
+                <label for="answer-0-3" class="answer__item">
+                A PIR meeting should take place one month after the incident is resolved.
+                </label>
+              </div>
+              <div class="answer">
+                <input type="radio" name="answers[0]" id="answer-0-4" value="4" required>
+                <label for="answer-0-4" class="answer__item answer__item--is-correct">
+                A PIR meeting should take place three-to-seven days after the incident is resolved.
+                <span class="answer__reveal-text"><br>This is the correct answer! It's a good idea to leave a couple of days after an incident to build a picture of the timeline and let people collect their thoughts. But if you wait too long then people's memory of the event will fade.</span>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Choose one of the following statements to complete this sentence: "It's important to compile the incident timeline..."</legend>
+            <div class="answers">
+              <div class="answer">
+                <input type="radio" name="answers[1]" id="answer-1-1" value="1" required>
+                <label for="answer-1-1" class="answer__item answer__item--is-correct">
+                "...before the PIR meeting."
+                  <span class="answer__reveal-text"><br>This is the correct answer! Participants may have different perspectives on what unfolded, so creating a common understanding of the sequence of events will get everyone on the same page from the outset.</span>
+                </label>
+              </div>
+              <div class="answer">
+                <input type="radio" name="answers[1]" id="answer-1-2" value="2" required>
+                <label for="answer-1-2" class="answer__item">
+                  "...after the PIR meeting."
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Choose one of the following statements to complete this sentence: "It is important to assign owners to action items..."</legend>
+            <div class="answers">
+              <div class="answer">
+                <input type="radio" name="answers[2]" id="answer-2-1" value="1" required>
+                <label for="answer-2-1" class="answer__item">
+                "...because we need people to share learnings from the incident."
+                </label>
+              </div>
+              <div class="answer">
+                <input type="radio" name="answers[2]" id="answer-2-2" value="2" required>
+                <label for="answer-2-2" class="answer__item answer__item--is-correct">
+                "...because we need people to take responsibility for solutions."
+                <span class="answer__reveal-text"><br>This is the correct answer! Even with the best intentions, good ideas will be forgotten unless people take charge of following up.</span>
+                </label>
+              </div>
+              <div class="answer">
+                <input type="radio" name="answers[2]" id="answer-2-3" value="3" required>
+                <label for="answer-2-3" class="answer__item">
+                "...because we need people to take the blame for mistakes."
+                </label>
+              </div>
+              <div class="answer">
+                <input type="radio" name="answers[2]" id="answer-2-4" value="4" required>
+                <label for="answer-2-4" class="answer__item">
+                  "...because we need people to explain their actions."
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <button type="submit">Submit answers</button>
+          <br>
+          <div class="message">
+            <p>You Scored: <span class="score" data-question-count="3" style="font-size:1.272em"></span></p>
+          </div>
+        </form>
+        <br>
+        <div>    
+          <a href="unit2lesson2knowledge.html" class="button" style="width: 10%; margin: auto; display: block;"><b>Reset</b></a>
+        </div>
         <br>
         <a href="unit2lesson2additional.html" class="button"><b>Next: Additional Resources &#8594; </b></a>
         <br>
         <br>
         <hr style="width:100%; height:6px; background-color: #EEEEEE; border:none;">
-      </div>
+      </div>    
     </div>
     <footer>
-      <p>© 2024 Student #22150595</p>
+      <small>
+        © 2024 Student #22150595 | Header SVG by <a class="footer-link" href="https://www.svgbackgrounds.com/">SVGBackgrounds.com</a>
+      </small>
     </footer>
   </body>
 </html>

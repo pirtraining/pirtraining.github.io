@@ -10,7 +10,7 @@
   <body>
     <div class="header">
       <h1>Post Incident Review Training</h1>
-      <p>A guide to learning from surprises</p>
+      <h4 style="font-weight: normal; line-height: 75%; padding-bottom: 10px;">A guide to learning from surprises</h4>
     </div>
 
     <div class="navbar">
@@ -24,24 +24,111 @@
     <div class="row">
       <div class="side">
         <p>
-          <a href="unit2lesson1.html">Introduction</a><br>
-          <a href="unit2lesson1.html">Lesson Objectives</a><br>
-          <a href="unit2lesson1topic1.html">The PIR Report</a><br>
-          <a href="unit2lesson1topic1.html" style="padding-left: 20px;"><i>PIR Report Template</i></a><br>
-          <a href="unit2lesson1topic2.html">Factual Data</a><br>
-          <a href="unit2lesson1topic2.html" style="padding-left: 20px;"><i>Opinions and Facts</i></a><br>
-          <a href="unit2lesson1topic3.html">Collecting Facts</a><br>
-          <a href="unit2lesson1topic3.html" style="padding-left: 20px;"><i>B.E.A.R.</i></a><br>
-          <a href="unit2lesson1topic4.html">Incident Timeline</a><br>
-          <a href="unit2lesson1topic4.html" style="padding-left: 20px;"><i>Example Timeline</i></a><br>
-          <a href="unit2lesson1knowledge.html">Knowledge Check</a><br>
-          <a href="unit2lesson1additional.html">Additional Resources</a><br>
+          <a class="special-link" href="unit2lesson1.html">Introduction</a><br>
+          <a class="special-link" href="unit1lesson2.html#section-1" style="padding-left: 20px;"><i>Lesson Objectives</i></a><br>
+          <a class="special-link" href="unit2lesson1topic1.html">The PIR Report</a><br>
+          <a class="special-link" href="unit2lesson1topic1.html#section-1" style="padding-left: 20px;"><i>PIR Report Components</i></a><br>
+          <a class="special-link" href="unit2lesson1topic2.html">Factual Data</a><br>
+          <a class="special-link" href="unit2lesson1topic2.html#section-1" style="padding-left: 20px;"><i>Opinions and Facts</i></a><br>
+          <a class="special-link" href="unit2lesson1topic3.html">Collecting Facts</a><br>
+          <a class="special-link" href="unit2lesson1topic3.html#section-1" style="padding-left: 20px;"><i>B.E.A.R.</i></a><br>
+          <a class="special-link" href="unit2lesson1topic4.html">Incident Timeline</a><br>
+          <a class="special-link" href="unit2lesson1topic4.html#section-1" style="padding-left: 20px;"><i>Example Timeline</i></a><br>
+          <a class="special-link" href="unit2lesson1knowledge.html">Knowledge Check</a><br>
+          <a class="special-link" href="unit2lesson1additional.html">Additional Resources</a><br>
         </p>
       </div>
       <div class="main">
-        <p>
-          Placeholder.
-        </p>
+        <h2>Knowledge Check</h2>
+        <form method="POST" class="is-not-results">
+          <fieldset>
+            <legend>Which one of the following is <i>NOT</i> part of a PIR report?</legend>
+            <div class="answers">
+              <div class="answer">
+                <input type="radio" name="answers[0]" id="answer-0-1" value="1" required>
+                <label for="answer-0-1" class="answer__item answer__item--is-correct">
+                Root cause analysis.
+                  <span class="answer__reveal-text"><br>This is the correct answer! Rather than focus on a root cause, a PIR report will surface what can be learned from the incident as a whole.</span>
+                </label>
+              </div>
+              <div class="answer">
+                <input type="radio" name="answers[0]" id="answer-0-2" value="2" required>
+                <label for="answer-0-2" class="answer__item">
+                Action items.
+                </label>
+              </div>
+              <div class="answer">
+                <input type="radio" name="answers[0]" id="answer-0-3" value="3" required>
+                <label for="answer-0-3" class="answer__item">
+                Incident timeline.
+                </label>
+              </div>
+              <div class="answer">
+                <input type="radio" name="answers[0]" id="answer-0-4" value="4" required>
+                <label for="answer-0-4" class="answer__item">
+                Learning points.
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Which one of the following statements is an objective fact?</legend>
+            <div class="answers">
+              <div class="answer">
+                <input type="radio" name="answers[1]" id="answer-1-1" value="1" required>
+                <label for="answer-1-1" class="answer__item">
+                The login app is badly designed.
+                </label>
+              </div>
+              <div class="answer">
+                <input type="radio" name="answers[1]" id="answer-1-2" value="2" required>
+                <label for="answer-1-2" class="answer__item">
+                There might have been a problem with the internet service provider.
+                </label>
+              </div>
+              <div class="answer">
+                <input type="radio" name="answers[1]" id="answer-1-3" value="3" required>
+                <label for="answer-1-3" class="answer__item answer__item--is-correct">
+                According to the access logs, the rate of login errors peaked at 15:23 GMT.
+                  <span class="answer__reveal-text"><br>This is the correct answer! Facts are objective and evidence-based, as opposed to opinions or beliefs.</span>
+                </label>
+              </div>
+              <div class="answer">
+                <input type="radio" name="answers[1]" id="answer-1-4" value="4" required>
+                <label for="answer-1-4" class="answer__item">
+                The login team probably didn't see the alert.
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>True of False: It's important to compile a record of <i>everything</i> that happened into an incident timeline?</legend>
+            <div class="answers">
+              <div class="answer">
+                <input type="radio" name="answers[2]" id="answer-2-1" value="1" required>
+                <label for="answer-2-1" class="answer__item">
+                True.
+                </label>
+              </div>
+              <div class="answer">
+                <input type="radio" name="answers[2]" id="answer-2-2" value="2" required>
+                <label for="answer-2-2" class="answer__item answer__item--is-correct">
+                False.
+                <span class="answer__reveal-text"><br>This is the correct answer! Recording every single part of an incident timeline would be time-consuming and difficult to read. Instead, try to focus on the key discoveries, actions, and decisions.</span>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <button type="submit">Submit answers</button>
+          <br>
+          <div class="message">
+            <p>You Scored: <span class="score" data-question-count="3" style="font-size:1.272em"></span></p>
+          </div>
+        </form>
+        <br>
+        <div>    
+          <a href="unit2lesson1knowledge.html" class="button" style="width: 10%; margin: auto; display: block;"><b>Reset</b></a>
+        </div>
         <br>
         <a href="unit2lesson1additional.html" class="button"><b>Next: Additional Resources &#8594; </b></a>
         <br>
@@ -50,7 +137,9 @@
       </div>
     </div>
     <footer>
-      <p>© 2024 Student #22150595</p>
+      <small>
+        © 2024 Student #22150595 | Header SVG by <a class="footer-link" href="https://www.svgbackgrounds.com/">SVGBackgrounds.com</a>
+      </small>
     </footer>
   </body>
 </html>

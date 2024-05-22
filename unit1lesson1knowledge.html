@@ -10,7 +10,7 @@
   <body>
     <div class="header">
       <h1>Post Incident Review Training</h1>
-      <p>A guide to learning from surprises</p>
+      <h4 style="font-weight: normal; line-height: 75%; padding-bottom: 10px;">A guide to learning from surprises</h4>
     </div>
 
     <div class="navbar">
@@ -24,25 +24,123 @@
     <div class="row">
       <div class="side">
         <p>
-          <a href="unit1lesson1.html">Introduction</a><br>
-          <a href="unit1lesson1.html">Lesson Objectives</a><br>
-          <a href="unit1lesson1topic1.html">Complexity</a><br>
-          <a href="unit1lesson1topic1.html" style="padding-left: 20px;"><i>Incident Examples</i></a><br>
-          <a href="unit1lesson1topic2.html">Causation</a><br>
-          <a href="unit1lesson1topic2.html" style="padding-left: 20px;"><i>Domino Model</i></a><br>
-          <a href="unit1lesson1topic2.html" style="padding-left: 20px;"><i>Swiss Cheese Model</i></a><br>
-          <a href="unit1lesson1topic3.html">Learning</a><br>
-          <a href="unit1lesson1topic3.html" style="padding-left: 20px;"><i>Team Safety</i></a><br>
-          <a href="unit1lesson1topic3.html" style="padding-left: 20px;"><i>PIR Leader</i></a><br>
-          <a href="unit1lesson1knowledge.html">Knowledge Check</a><br>
-          <a href="unit1lesson1additional.html">Additional Resources</a><br>
+          <a class="special-link" href="unit1lesson1.html">Introduction</a><br>
+          <a class="special-link" href="unit1lesson1.html#section-1" style="padding-left: 20px;"><i>Lesson Objectives</i></a><br>
+          <a class="special-link" href="unit1lesson1topic1.html">Complexity</a><br>
+          <a class="special-link" href="unit1lesson1topic1.html#section-1" style="padding-left: 20px;"><i>Incident Examples</i></a><br>
+          <a class="special-link" href="unit1lesson1topic2.html">Causation</a><br>
+          <a class="special-link" href="unit1lesson1topic2.html#section-1" style="padding-left: 20px;"><i>Domino Model</i></a><br>
+          <a class="special-link" href="unit1lesson1topic2.html#section-2" style="padding-left: 20px;"><i>Swiss Cheese Model</i></a><br>
+          <a class="special-link" href="unit1lesson1topic3.html">Learning</a><br>
+          <a class="special-link" href="unit1lesson1topic3.html#section-1" style="padding-left: 20px;"><i>Team Safety</i></a><br>
+          <a class="special-link" href="unit1lesson1topic3.html#section-2" style="padding-left: 20px;"><i>PIR Leader</i></a><br>
+          <a class="special-link" href="unit1lesson1knowledge.html">Knowledge Check</a><br>
+          <a class="special-link" href="unit1lesson1additional.html">Additional Resources</a><br>
         </p>
       </div>
       <div class="main">
         <h2>Knowledge Check</h2>
-        <p>
-          Placeholder
-        </p>
+        <form method="POST" class="is-not-results">
+          <fieldset>
+            <legend>Which one of the following statements best describes an IT incident?</legend>
+            <div class="answers">
+              <div class="answer">
+                <input type="radio" name="answers[0]" id="answer-0-1" value="1" required>
+                <label for="answer-0-1" class="answer__item answer__item--is-correct">
+                An IT incident directs us to areas of complexity in the system.
+                  <span class="answer__reveal-text"><br>This is the correct answer! A complex system is bound to surprise us, and incidents are signals sent by the system to tell us where the system has become too complicated.</span>
+                </label>
+              </div>
+              <div class="answer">
+                <input type="radio" name="answers[0]" id="answer-0-2" value="2" required>
+                <label for="answer-0-2" class="answer__item">
+                An IT incident directs us to the parts of a system that should never fail.
+                </label>
+              </div>
+              <div class="answer">
+                <input type="radio" name="answers[0]" id="answer-0-3" value="3" required>
+                <label for="answer-0-3" class="answer__item">
+                An IT incident directs us to the people in an organisation who are bad at their jobs.
+                </label>
+              </div>
+              <div class="answer">
+                <input type="radio" name="answers[0]" id="answer-0-4" value="4" required>
+                <label for="answer-0-4" class="answer__item">
+                An IT incident directs us to the parts of a system that we already know really well.
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Choose one of the following statements to complete this sentence: "The purpose of a learning-based PIR is to..."</legend>
+            <div class="answers">
+              <div class="answer">
+                <input type="radio" name="answers[1]" id="answer-1-1" value="1" required>
+                <label for="answer-1-1" class="answer__item">
+                "...discover the single point of failure in the system."
+                </label>
+              </div>
+              <div class="answer">
+                <input type="radio" name="answers[1]" id="answer-1-2" value="2" required>
+                <label for="answer-1-2" class="answer__item">
+                "...move on from an incident as quickly as possible."
+                </label>
+              </div>
+              <div class="answer">
+                <input type="radio" name="answers[1]" id="answer-1-3" value="3" required>
+                <label for="answer-1-3" class="answer__item answer__item--is-correct">
+                "...discover as much as we can about how an incident unfolded."
+                  <span class="answer__reveal-text"><br>This is the correct answer! Multiple conditions must align in order for an incident to occur, and a PIR is a chance for us to learn about all the weak points in the system.</span>
+                </label>
+              </div>
+              <div class="answer">
+                <input type="radio" name="answers[1]" id="answer-1-4" value="4" required>
+                <label for="answer-1-4" class="answer__item">
+                  "...find out why the system failed this once."
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Which one of the following statements best characterises a sense of team psychological safety?</legend>
+            <div class="answers">
+              <div class="answer">
+                <input type="radio" name="answers[2]" id="answer-2-1" value="1" required>
+                <label for="answer-2-1" class="answer__item">
+                Being afraid to make mistakes.
+                </label>
+              </div>
+              <div class="answer">
+                <input type="radio" name="answers[2]" id="answer-2-2" value="2" required>
+                <label for="answer-2-2" class="answer__item answer__item--is-correct">
+                Being able to raise issues and concerns.
+                <span class="answer__reveal-text"><br>This is the correct answer! Team psychological safety promotes mutual respect and trust among team members, making it a safe space to raise issues and concerns.</span>
+                </label>
+              </div>
+              <div class="answer">
+                <input type="radio" name="answers[2]" id="answer-2-3" value="3" required>
+                <label for="answer-2-3" class="answer__item">
+                Being reluctant to change and adapt.
+                </label>
+              </div>
+              <div class="answer">
+                <input type="radio" name="answers[2]" id="answer-2-4" value="4" required>
+                <label for="answer-2-4" class="answer__item">
+                Being hesitant to ask difficult questions.
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <button type="submit">Submit answers</button>
+          <br>
+          <div class="message">
+            <p>You Scored: <span class="score" data-question-count="3" style="font-size:1.272em"></span></p>
+          </div>
+        </form>
+        <br>
+        <div>    
+          <a href="unit1lesson1knowledge.html" class="button" style="width: 10%; margin: auto; display: block;"><b>Reset</b></a>
+        </div>
         <br>
         <a href="unit1lesson1additional.html" class="button"><b>Next: Additional Resources &#8594; </b></a>
         <br>
@@ -51,7 +149,9 @@
       </div>
     </div>
     <footer>
-      <p>© 2024 Student #22150595</p>
+      <small>
+        © 2024 Student #22150595 | Header SVG by <a class="footer-link" href="https://www.svgbackgrounds.com/">SVGBackgrounds.com</a>
+      </small>
     </footer>
   </body>
 </html>
