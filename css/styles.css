@@ -295,15 +295,14 @@
     background-color: var(--colour-base-green);
     border-radius: 0px;
     box-shadow: 4px 4px 0 1px var(--colour-pitch-black);
+    width: 75%;
     padding: 10px 10px;
     margin: 30px 0;
-    width: 50em;
     margin-left: auto;
     margin-right: auto;
   }
 
   .text-item {
-    width: fit-content;
     color: var(--colour-pitch-black);
     padding: 5px;
     margin-bottom: 0.5em;
@@ -359,13 +358,17 @@
     margin: 15px auto;
     max-width: 1000px;
     height: 750px;
-    overflow: hidden;
+    overflow: scroll;
     border: 2px solid var(--colour-pitch-black);
     background-color: var(--colour-lighter-grey);
     border-radius: 0px;
     box-shadow: 4px 4px 0 1px var(--colour-pitch-black);
   } 
 
+  .grey-scroller {
+    scrollbar-color: var(--colour-pitch-black);
+  }
+  
   .block { 
     position: absolute; 
     width: 400px; 
@@ -413,7 +416,7 @@
     margin: 10px auto; /* top and bottom | left and right */
     max-width: 900px;
     height: 310px;
-    overflow: hidden;
+    overflow: scroll;
     border: 2px solid var(--colour-pitch-black);
     background-color: var(--colour-lighter-grey);
     border-radius: 0px;
@@ -556,7 +559,7 @@
     background-color: transparent;
     display: block; /* Otherwise can't center the element */
     margin: 10px auto; /* top and bottom | left and right */
-    width: 700px;
+    width: 75%;
     height: 300px;
     overflow: hidden;
     border: 2px solid var(--colour-pitch-black);
@@ -611,12 +614,26 @@
     place-items: center;
   }
 
-  video {
+  #video_container1 video {
+    background-color: var(--colour-lighter-grey);
     border: 2px solid var(--colour-pitch-black);
     box-shadow: 4px 4px 0 1px var(--colour-pitch-black); 
-    display: block; /* Otherwise can't center the element */
-    margin: 10px auto; /* top and bottom | left and right */
+    display: block; 
+    margin: 10px auto; 
     object-fit: scale-down;
+    width: 75%;
+    height: 75%;
+  }
+
+  #video_container2 video {
+    background-color: var(--colour-lighter-grey);
+    border: 2px solid var(--colour-pitch-black);
+    box-shadow: 4px 4px 0 1px var(--colour-pitch-black); 
+    display: block; 
+    margin: 10px auto; 
+    object-fit: scale-down;
+    width: 75%;
+    height: 75%;
   }
 
   /* Quiz settings */
