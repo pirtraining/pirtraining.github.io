@@ -1,13 +1,15 @@
-/* Setting box-sizing: border-box means padding and border are included in the width and height
-   Applying this to all elements is safe and wise:*/
+/* Setting box-sizing: border-box means padding and border are included in 
+   the width and height, applying this to all elements is safe and wise */
    * {
     box-sizing: border-box;
   }
 
-  /* Colour palette */
+  /* Colour palette 
+     -------------- */
   :root {
     /* Base colours */
-    --colour-base-green: #82D25E;
+    /*--colour-base-green: #82D25E;*/
+    --colour-base-green: #B7DF97;
     /*#8A9A5B;*/
     /*96e072;*/
     --colour-dark-blue: #42495C;
@@ -28,6 +30,8 @@
     --colour-quiz-wrong: #C70000;
   }
   
+  /* Load fonts locally
+     ------------------ */
   @font-face { 
     font-family:'Atkinson Hyperlegible';
     font-style: normal;
@@ -97,9 +101,9 @@
   /* Typography presets - Golden ratio typographic scale
      ---------------------------------------------------	*/
   .huge, h1 {
-      font-size: 2.618em;
-      line-height: 60px;
-      letter-spacing: -1px;
+    font-size: 2.618em;
+    line-height: 60px;
+    letter-spacing: -1px;
   }
   
   .large, h2 {
@@ -140,6 +144,11 @@
     .row {   
       flex-direction: column;
     }
+
+    /* Hide the logo at small screen sizes */
+    .intro-img {
+      display:none;
+    }
   }
   
   /* When the screen is less than 480px (smartphone) wide, make the navigation links stack on top of each other instead of next to each other */
@@ -147,6 +156,41 @@
     .navbar a {
       float: none;
       width:100%;
+    }
+
+    /* Responsive table styling - smartphone size */
+    table {
+      border: 1px solid var(--colour-pitch-black);
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      display: block;
+    }
+    
+    table td {
+      display: block;
+      text-align: left;
+      font-size: 1em; 
+      line-height: 175%;
+    }
+    
+    table td::before {
+      /* aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label); */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
     }
   }
   
@@ -163,6 +207,40 @@
     /* SVG credit to SVGBackgrounds.com https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/ */
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23228833' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23228833'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
     background-repeat: round;
+  }
+
+  /* Show a logo to the right of the introductory paragraph */
+  #intro-container {
+    display: flex;
+    align-items: center;
+    background-color:var(--colour-light-grey); 
+    padding-left:30px; 
+    padding-bottom:50px; 
+    border:2px solid var(--colour-dark-blue);
+  }
+
+  #intro-container p {
+      margin-right: 2em;
+  }
+
+  /* Style the footer */
+  footer {
+    position: fixed;
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: var(--colour-dark-blue);
+    color: var(--colour-bright-white);
+  }
+
+  /* Footer link should be white and never show as visited */
+  .footer-link, .footer-link:visited, .footer-link:active {
+    color: var(--colour-bright-white);
+    text-decoration: underline;
+    font-size: small;
   }
 
   /* Style the top navigation bar */
@@ -192,23 +270,6 @@
     color: var(--colour-pitch-black);
   }
 
-  .special-link, .special-link:visited, .special-link:active {
-    color: var(--colour-dark-blue);
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  .special-link:hover {
-    color: var(--colour-quiz-correct);
-  }
-  
-  /* Footer link should be white and never show as visited */
-  .footer-link, .footer-link:visited, .footer-link:active {
-    color: var(--colour-bright-white);
-    text-decoration: underline;
-    font-size: small;
-  }
-
   /* Style the column container */
   .row {  
     display: flex;
@@ -229,37 +290,37 @@
     overflow: hidden;
   }
 
-  /* ...and main column */
+  /* ...and a main column */
   .main {   
     flex: 85%;
     background-color: var(--colour-bright-white);
     padding: 20px;
     padding-bottom: 100px; 
   }
-  
+
+  /* Links on the side navigation are special - they don't have decoration and follow the colour palette */
+  .special-link, .special-link:visited, .special-link:active {
+    color: var(--colour-dark-blue);
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .special-link:hover {
+    color: var(--colour-quiz-correct);
+  }
+
   /* For units, create two equal columns that sit next to each other */
-  /* Left column for Unit 1... */
   .home-splitscreen {
     flex: 50%;
     border: 10px solid var(--colour-bright-white);
     margin-bottom: -100px; /* any large number will do */
     padding-bottom: 100px; 
   }
-  
-  footer {
-    position: fixed;
-    bottom: 0; 
-    left: 0; 
-    right: 0;
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    background-color: var(--colour-dark-blue);
-    color: var(--colour-bright-white);
-  }
 
   /* Page elements
      ------------- */
+
+  /* Button styling */
   a.button {
     background-color: var(--colour-dark-blue);
     border: 2px solid var(--colour-pitch-black);
@@ -278,17 +339,77 @@
     color: var(--colour-pitch-black);
   }
 
+  /* Table styling - desktop sizes */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    border: 2px solid var(--colour-pitch-black);
+    background-color: var(--colour-light-grey);
+    color: var(--colour-pitch-black);
+    border-radius: 0px;
+    box-shadow: 4px 4px 0 1px var(--colour-pitch-black);
+    padding: 10px 10px;
+    display: block; /* Otherwise can't center the element */
+    margin: 10px auto; /* top and bottom | left and right */
+  }
+  
+  table tr {
+    background-color: var(--colour-lighter-grey); 
+    border: 1px solid var(--colour-light-grey); 
+    padding: .35em;
+  }
+
+  tr:nth-child(even) {background: var(--colour-bright-white);}
+  tr:nth-child(odd) {background: var(--colour-lighter-grey);}
+
+  table th {
+    background-color: var(--colour-base-green);
+    padding: 0.25rem;
+    text-align: left;
+    border: 2px solid var(--colour-pitch-black);
+  }
+
+  table td {
+    padding: 0.25rem;
+    text-align: left;
+    border: 2px solid var(--colour-pitch-black);
+  }
+
+  /* Pages have backwards and forwards navigation buttons in a grid */
+  .grid-container-two {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30%;
+  }
+
+  /* Quiz pages have a third button to reset the questions */
+  .grid-container-three {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10%;
+  }
+
+  /* Underline the current section in the navbar */
   .highlightCurrentTab {
     border-bottom: 2px solid var(--colour-bright-white);
   }
 
-  /* Fake image, just for this example */
-  .fakeimg {
-    background-color: var(--colour-medium-grey);
-    width: 100%;
-    padding: 20px;
+  .highlightCurrentTab:hover {
+    border-bottom: 2px solid var(--colour-pitch-black);
   }
   
+  /* Format SVG icons */
+  .svg-icon {
+    display: block; /* To centre */
+    margin: auto; /* To centre */
+    margin-top: 20px; /* Breathing room on top */
+  }
+
   /* Key point text box */
   .text-container {
     border: 2px solid var(--colour-pitch-black);
@@ -365,10 +486,6 @@
     box-shadow: 4px 4px 0 1px var(--colour-pitch-black);
   } 
 
-  .grey-scroller {
-    scrollbar-color: var(--colour-pitch-black);
-  }
-  
   .block { 
     position: absolute; 
     width: 400px; 
@@ -428,7 +545,7 @@
     width: 375px; 
     height: 200px; 
     padding: 20px 30px; 
-    background-color: var(--colour-palette-4red);
+    background-color: var(--colour-quiz-wrong);
     color: var(--colour-bright-white);
     border: 2px solid var(--colour-pitch-black);
     border-radius: 0px;
@@ -446,7 +563,7 @@
 
   /* RHS - behind */
   .block-truefalse:nth-child(3) { 
-    background-color: var(--colour-palette-2green);
+    background-color: var(--colour-quiz-correct);
   }
    
   /* RHS - in front */
@@ -469,7 +586,7 @@
     margin: 10px auto; /* top and bottom | left and right */
     max-width: 850px;
     height: 775px;
-    overflow: hidden;
+    overflow: scroll;
     border: 2px solid var(--colour-pitch-black);
     background-color: var(--colour-lighter-grey);
     border-radius: 0px;
@@ -494,65 +611,7 @@
     z-index: 1; 
     box-shadow: 4px 4px 0 1px var(--colour-pitch-black);
     height: 310px; 
-  } 
-
-  /* Nornal grid / table */
-  table {
-    border-collapse: collapse;
-    width: 50%;
-    border: 2px solid var(--colour-pitch-black);
-    background-color: var(--colour-light-grey);
-    border-radius: 0px;
-    box-shadow: 4px 4px 0 1px var(--colour-pitch-black);
-    padding: 10px 10px;
-    display: block; /* Otherwise can't center the element */
-    margin: 10px auto; /* top and bottom | left and right */
   }
-
-  th {
-    background-color: var(--colour-base-green);
-    padding: 0.25rem;
-    text-align: left;
-    border: 2px solid var(--colour-pitch-black);
-  }
-
-  td {
-    padding: 0.25rem;
-    text-align: left;
-    border: 2px solid var(--colour-pitch-black);
-  }
-
-  /* Alternating grid / table */
-  table.table2 {
-    border-collapse: collapse;
-    width: 50%;
-    border: 2px solid var(--colour-pitch-black);
-    color: var(--colour-pitch-black);
-    border-radius: 0px;
-    box-shadow: 4px 4px 0 1px var(--colour-pitch-black);
-    padding: 10px 10px;
-    display: block; /* Otherwise can't center the element */
-    margin: 10px auto; /* top and bottom | left and right */
-  }
-
-  table.table2 th {
-    background-color: var(--colour-base-green);
-    padding: 0.25rem;
-    text-align: left;
-    border: 2px solid var(--colour-pitch-black);
-  }
-
-  table.table2 td {
-    padding: 0.25rem;
-    text-align: left;
-    border: 2px solid var(--colour-pitch-black);
-  }
-
-  table.table2 tr {background: var(--colour-lighter-grey);}
-  table.table2 tr:nth-of-type(2) {background: var(--colour-bright-white);}
-  table.table2 tr:nth-of-type(3) {background: var(--colour-lighter-grey);}
-  table.table2 tr:nth-of-type(4) {background: var(--colour-bright-white);}
-  table.table2 tr:nth-of-type(5) {background: var(--colour-lighter-grey);}
 
   /* Flipping cards */
   .flip-card {
@@ -614,6 +673,7 @@
     place-items: center;
   }
 
+  /* Video settings */
   #video_container1 video {
     background-color: var(--colour-lighter-grey);
     border: 2px solid var(--colour-pitch-black);
@@ -830,3 +890,4 @@
     z-index: 9999;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
   }
+  
