@@ -15,10 +15,10 @@
 
     <div class="navbar">
       <a href="index.html">Home</a>
-      <a href="unit1lesson1.html">Incidents</a>
-      <a href="unit1lesson2.html">Language</a>
-      <a href="unit2lesson1.html"><span class="highlightCurrentTab">Preparation</span></a>
-      <a href="unit2lesson2.html">Facilitation</a>
+      <a href="unit1lesson1.html">Lesson 1.1 Incidents</a>
+      <a href="unit1lesson2.html">Lesson 1.2 Language</a>
+      <a href="unit2lesson1.html"><span class="highlightCurrentTab">Lesson 2.1 Preparation</span></a>
+      <a href="unit2lesson2.html">Lesson 2.2 Facilitation</a>
     </div>
 
     <div class="row">
@@ -27,12 +27,12 @@
           <a class="special-link" href="unit2lesson1.html">Introduction</a><br>
           <a class="special-link" href="unit1lesson2.html#section-1" style="padding-left: 20px;"><i>Lesson Objectives</i></a><br>
           <a class="special-link" href="unit2lesson1topic1.html">The PIR Report</a><br>
-          <a class="special-link" href="unit2lesson1topic1.html#section-1" style="padding-left: 20px;"><i>PIR Report Components</i></a><br>
+          <a class="special-link" href="unit2lesson1topic1.html#section-1" style="padding-left: 20px;"><i>Components</i></a><br>
           <a class="special-link" href="unit2lesson1topic2.html">Factual Data</a><br>
           <a class="special-link" href="unit2lesson1topic2.html#section-1" style="padding-left: 20px;"><i>Opinions and Facts</i></a><br>
           <a class="special-link" href="unit2lesson1topic3.html">Collecting Facts</a><br>
           <a class="special-link" href="unit2lesson1topic3.html#section-1" style="padding-left: 20px;"><i>B.E.A.R.</i></a><br>
-          <a class="special-link" href="unit2lesson1topic4.html">Incident Timeline</a><br>
+          <a class="special-link" href="unit2lesson1topic4.html" style="margin-left: -1em;">&#9656; Incident Timeline</a><br>
           <a class="special-link" href="unit2lesson1topic4.html#section-1" style="padding-left: 20px;"><i>Example Timeline</i></a><br>
           <a class="special-link" href="unit2lesson1knowledge.html">Knowledge Check</a><br>
           <a class="special-link" href="unit2lesson1additional.html">Additional Resources</a><br>
@@ -42,10 +42,7 @@
         <h2>Incident Timeline</h2>
         <p>
           Collate the facts you have gathered into the “incident timeline” table in the PIR report. 
-          See Table 2 for a partially completed example. 
-          Each data point in the timeline should be identified by a date and time. 
-          Choose a single time format and use it consistently throughout, particularly if it's possible for an event response to span multiple timezones or geographies. 
-          Do include links, graphs, charts, etc. if it helps to illustrate the event more clearly (see Table 1).
+          See Table 1 for a partially completed example. 
         </p>
         <table class="table2" style="width: 100%" id="section-1"> 
           <col>
@@ -53,41 +50,102 @@
           <thead> 
             <tr> 
               <th>Date and Time</th> 
-              <th>Timeline Event</th> 
+              <th>Event</th> 
             </tr> 
           </thead> 
           <tbody> 
             <tr> 
               <td>May 1 2024 12:00 GMT</td>
-              <td>The server reported an ‘out of disk space’ error.</td>
+              <td>The support helpdesk begin receiving reports from customers experiencing hanging processes while using the application.</td>
             </tr> 
             <tr> 
-              <td>May 1 2024 12:01 GMT</td>
-              <td>The server is restarted by the on-call engineer.</td>
+              <td>May 1 2024 12:04 GMT</td>
+              <td>The engineering team begin observing high processing delays in the application platform.
+                <br>
+                <img src="img/example-2141.png" width="350px" height="209px" alt="Example chart illustrating high processing delays" style="margin-top: 1em;">
+              </td>
             </tr> 
             <tr> 
-              <td>May 1 2024 12:05 GMT</td>
-              <td>The server restart is complete. The on-call team monitor connection requests to the server.</td>
+              <td>May 1 2024 12:07 GMT</td>
+              <td>After correlating support cases to processing delays, the engineering team escalate to the on-call team.</td>
+            </tr> 
+            <tr> 
+              <td>May 1 2024 12:15 GMT</td>
+              <td>The on-call team find repeating "No space left on device" errors in the logs. Example:
+                <br>
+                <img src="img/example-2142.png" width="350px" height="109px" alt="Example log section illustrating no space left on device errors" style="margin-top: 1em;">
+              </td>
+            </tr> 
+            <tr> 
+              <td>May 1 2024 12:19 GMT</td>
+              <td>The on-call team discover a new process writing more data to disk than expected and begin preparing a configuration change to disable that process.</td>
+            </tr> 
+            <tr> 
+              <td>May 1 2024 12:34 GMT</td>
+              <td>Configuration change is code reviewed and tested. The decision is made to deploy the configuration change to the live application.</td>
+            </tr> 
+            <tr> 
+              <td>May 1 2024 12:38 GMT</td>
+              <td>Configuration change is deployed.</td>
+            </tr> 
+            <tr> 
+              <td>May 1 2024 12:45 GMT</td>
+              <td>Processing times observed returning to expected levels.
+                <br>
+                <img src="img/example-2143.png" width="350px" height="209px" alt="Example chart illustrating normal processing times" style="margin-top: 1em;">
+              </td>
             </tr> 
           </tbody>
         </table>
         <p style="text-align:center;">
           <b>Table 1: Excerpt from a possible incident timeline.</b>
         </p>
+        <div class="text-container" style="background-color: #DDDDDD"> 
+          <div class="text-item">
+            <p>
+              <svg fill="#000000" width="18px" height="18px" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"><title>Tip icon</title><path d="M15,16.372a7.5,7.5,0,1,0-6,0V18h6ZM11.221,6.087a3.5,3.5,0,0,0-2.7,3.023,1,1,0,0,1-.992.89,1.065,1.065,0,0,1-.112-.006,1,1,0,0,1-.884-1.1,5.5,5.5,0,0,1,4.246-4.754,1,1,0,0,1,.442,1.951ZM9,20h6v1a1,1,0,0,1-1,1H10a1,1,0,0,1-1-1Z"/>
+              </svg>
+              Tip: Each data point in the timeline should be identified by a <b>date and time</b>. 
+              </p>
+          </div>
+        </div>
+        <div class="text-container" style="background-color: #DDDDDD"> 
+          <div class="text-item">
+            <p>
+              <svg fill="#000000" width="18px" height="18px" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"><title>Tip icon</title><path d="M15,16.372a7.5,7.5,0,1,0-6,0V18h6ZM11.221,6.087a3.5,3.5,0,0,0-2.7,3.023,1,1,0,0,1-.992.89,1.065,1.065,0,0,1-.112-.006,1,1,0,0,1-.884-1.1,5.5,5.5,0,0,1,4.246-4.754,1,1,0,0,1,.442,1.951ZM9,20h6v1a1,1,0,0,1-1,1H10a1,1,0,0,1-1-1Z"/>
+              </svg>
+              Tip: Choose a <b>single time format</b> and use it consistently throughout, particularly if it's possible for an event response to span multiple timezones or geographies. 
+              </p>
+          </div>
+        </div>
+        <div class="text-container" style="background-color: #DDDDDD"> 
+          <div class="text-item">
+            <p>
+              <svg fill="#000000" width="18px" height="18px" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"><title>Tip icon</title><path d="M15,16.372a7.5,7.5,0,1,0-6,0V18h6ZM11.221,6.087a3.5,3.5,0,0,0-2.7,3.023,1,1,0,0,1-.992.89,1.065,1.065,0,0,1-.112-.006,1,1,0,0,1-.884-1.1,5.5,5.5,0,0,1,4.246-4.754,1,1,0,0,1,.442,1.951ZM9,20h6v1a1,1,0,0,1-1,1H10a1,1,0,0,1-1-1Z"/>
+              </svg>
+              Tip: Do include <b>links</b>, <b>graphs</b>, <b>charts</b>, etc. if it helps to illustrate the event more clearly.
+              </p>
+          </div>
+        </div>
         <p>
-          <br>Here is a more complete example timeline included in the PIR report template. <i>Link TBD</i>
-        </p>
-        <p>
+          <br>
           Piecing together the sequence of events <b>before</b> the PIR meeting is vital because it establishes a <b>common understanding</b> of the incident.
+          <br>
           Once we are all discussing the same issue, meaningful <b>learning</b> can then take place.
+          <br>
           Familiarising yourself with the timeline will also give you a sense of the <b>flow</b> of events, the <b>scope</b> of the incident, and the <b>personalities</b> involved.
-          This information will prepare you to guide the PIR meeting and informs the types of questions to ask.
+          <br>
+          <b>This information will prepare you</b> to guide the PIR meeting and inform the types of questions to ask.
+          <br>
+          <br>
           Once your incident timeline is complete, you now have a draft PIR report and <b>you are now ready to facilitate a PIR meeting!</b>
         </p>
+        <br>
+        <hr style="width:100%; height:6px; background-color: #EEEEEE; border:none;">
         <div class="text-container">
           <div class="text-item">
             <h4>
-              <svg height="20px" width="20px" version="1.1" id="_x32_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
+              <svg height="20px" width="20px" version="1.1" id="_x32_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><title>Key icon</title>
                 <g id="SVGRepo_iconCarrier_3">
                   <style type="text/css"> .st0{fill:#000000;}
                   </style>
@@ -102,10 +160,15 @@
           </div>
         </div>
         <br>
-        <a href="unit2lesson1knowledge.html" class="button"><b>Next: Knowledge Check &#8594; </b></a>
-        <br>
-        <br>
         <hr style="width:100%; height:6px; background-color: #EEEEEE; border:none;">
+        <div class="grid-container-two">
+          <div>
+            <a href="unit2lesson1topic3.html" class="button"><b> &#8592; Back: Collecting Facts </b></a>
+          </div>
+          <div>
+            <a href="unit2lesson1knowledge.html" class="button"><b> Next: Knowledge Check &#8594; </b></a>
+          </div>
+        </div>
       </div>
     </div>
     <footer>
