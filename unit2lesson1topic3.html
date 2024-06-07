@@ -15,152 +15,143 @@
 
     <div class="navbar">
       <a href="index.html">Home</a>
-      <a href="unit1lesson1.html">Lesson 1.1 Incidents</a>
-      <a href="unit1lesson2.html">Lesson 1.2 Language</a>
-      <a href="unit2lesson1.html"><span class="highlightCurrentTab">Lesson 2.1 Preparation</span></a>
-      <a href="unit2lesson2.html">Lesson 2.2 Facilitation</a>
+      <a href="unit1lesson1.html">Incidents</a>
+      <a href="unit1lesson2.html">Language</a>
+      <a href="unit2lesson1.html"><span class="highlightCurrentTab">Preparation</span></a>
+      <a href="unit2lesson2.html">Facilitation</a>
+      <a href="looking.html" class="right">Looking for Something?</a>
     </div>
 
     <div class="row">
       <div class="side">
         <p>
-          <a class="special-link" href="unit2lesson1.html">Introduction</a><br>
-          <a class="special-link" href="unit1lesson2.html#section-1" style="padding-left: 20px;"><i>Lesson Objectives</i></a><br>
+          <a class="special-link" href="unit2lesson1.html">Preparation</a><br>
+          <a class="special-link" href="unit2lesson1.html#section-1" style="padding-left: 1em;"><i>Introduction</i></a><br>
+          <a class="special-link" href="unit2lesson1.html#section-2" style="padding-left: 1em;"><i>Objectives</i></a><br>
           <a class="special-link" href="unit2lesson1topic1.html">The PIR Report</a><br>
-          <a class="special-link" href="unit2lesson1topic1.html#section-1" style="padding-left: 20px;"><i>Components</i></a><br>
           <a class="special-link" href="unit2lesson1topic2.html">Factual Data</a><br>
-          <a class="special-link" href="unit2lesson1topic2.html#section-1" style="padding-left: 20px;"><i>Opinions and Facts</i></a><br>
-          <a class="special-link" href="unit2lesson1topic3.html" style="margin-left: -1em;">&#9656; Collecting Facts</a><br>
-          <a class="special-link" href="unit2lesson1topic3.html#section-1" style="padding-left: 20px;"><i>B.E.A.R.</i></a><br>
+          <a class="special-link" href="unit2lesson1topic3.html" style="margin-left: -0.85em;">&#9632; Collecting Facts</a><br>
           <a class="special-link" href="unit2lesson1topic4.html">Incident Timeline</a><br>
-          <a class="special-link" href="unit2lesson1topic4.html#section-1" style="padding-left: 20px;"><i>Example Timeline</i></a><br>
           <a class="special-link" href="unit2lesson1knowledge.html">Knowledge Check</a><br>
           <a class="special-link" href="unit2lesson1additional.html">Additional Resources</a><br>
         </p>
       </div>
       <div class="main">
-        <h2>Collecting Facts</h2>
-        <p>
-          Assembling the incident timeline is a <b>fact collection</b> activity.
-          Facts can be collected from multiple data sources. 
+        <div class="main-insert">
+          <h2>Collecting Facts</h2>
+          <p>
+            Assembling the incident timeline is a <b>fact collection</b> activity.
+            Facts can be collected from multiple data sources. 
+            <br>
+            Potential data sources might include:
+          </p>
+          <ul style="padding-left: 30px;">
+            <li><b>Issue tracking software</b> (e.g.: Jira, Asana, Bugzilla), which may have details of when issues were raised;</li>
+            <li><b>Asynchronous text discussions</b> (e.g.: Slack, MS Teams), which may have records of troubleshooting steps and actions taken;</li>
+            <li><b>Monitoring systems</b> (e.g.: New Relic, Nagios), which may have information about service team responses and issue severity; or</li>
+            <li><b>Code reviews</b> (e.g.: GitHub, Gerrit, Bitbucket), which may have context on system changes and resolutions.</li>
+          </ul>
           <br>
-          Potential data sources might include:
-        </p>
-        <ul style="padding-left: 30px;">
-          <li><b>Issue tracking software</b> (e.g.: Jira, Asana, Bugzilla), which may have details of when issues were raised;</li>
-          <li><b>Asynchronous text discussions</b> (e.g.: Slack, MS Teams), which may have records of troubleshooting steps and actions taken;</li>
-          <li><b>Monitoring systems</b> (e.g.: New Relic, Nagios), which may have information about service team responses and issue severity;</li>
-          <li><b>Code reviews</b> (e.g.: GitHub, Gerrit, Bitbucket), which may have context on system changes and resolutions.</li>
-        </ul>
-        <br>
-        <p>
-        The timeline <b>does not have to be an exhaustive</b> collection of data, it only needs to capture the <b>key facts</b>. 
-        <br>
-        It may be helpful to use the <b>B.E.A.R.</b> mnemonic to help decide what those key facts are (see Figure 1).
-        </p>
-        <div class="rectangular-container" id="section-1">
-          <div class="rectangular-block" 
-               style="top: 425px; 
-                      left: 275px;
-                      background-color: #AA4499;"> 
-            <span style="float:right">
-              <b style="font-size:2.618em;">R</b> 
-            </span>
-            <div class="block-content"> 
-              <p><b>R is for “Resolution.”</b>
+          <p>
+          The timeline <b>does not have to be an exhaustive</b> collection of data, it only needs to capture the <b>key facts</b>. 
+          <br>
+          It may be helpful to use the <b>B.E.A.R.</b> mnemonic to help decide what those key facts are (see Figure 1).
+          </p>
+          <div class="rectangular-container" id="section-1">
+            <div class="rectangular-block" 
+                style="top: 20em; 
+                        left: 14.5em;
+                        background-color: #AA4499;"> 
+              <span style="float:right">
+                <b style="font-size:2.618em;">R</b> 
+              </span>
+              <div class="block-content"> 
+                <p><b>R is for “Resolution.”</b>
+                  <br>
+                  It’s important to record the point at which the event was resolved. 
+                  <br>
+                  Relevant facts include the factors which led the response team to determine the issue had ended, and whether any follow-up communications occurred.
+                </p> 
+                <svg style="float: right;" fill="#FFFFFF" width="3.5em" height="3.5em" viewBox="0 3 24 24" xmlns="http://www.w3.org/2000/svg"><title>Resolve icon</title><path d="M8.591,20.706a1,1,0,0,0,1.385.03l12.7-11.674a1,1,0,0,0,.061-1.412L18.785,3.325a1,1,0,0,0-1.415-.061l-7.865,7.23L6.844,7.827a1.03,1.03,0,0,0-1.416,0L1.292,11.974a1,1,0,0,0,0,1.412ZM6.136,9.949l2.631,2.637a1,1,0,0,0,1.384.031l7.834-7.2,2.6,2.849L9.33,18.614,3.412,12.68Z"/>
+                </svg>
+              </div> 
+            </div>
+            <div class="rectangular-block" 
+                style="top: 14em; 
+                        left: 10em;
+                        background-color: #C44F63; "> 
+              <span style="float:right">
+                <b style="font-size:2.618em;">A</b> 
+              </span>
+              <div class="block-content"> 
+                <p><b>A is for “Actions.”</b>
+                  <br>
+                  It’s illuminating to highlight the measures taken by the response team to resolve the incident.
+                  <br>
+                  Relevant facts include any workarounds attempted, decisions made, problems solved, or processes started.
+                </p> 
+                <svg style="float: right;" version="1.1" id="Action" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="4.5em" height="4.5em" viewBox="0 0 32 32" xml:space="preserve"><title>Action icon</title><style type="text/css"> .linesandangles_een{fill:#FFFFFF;} </style><path class="linesandangles_een" d="M23,12h-6v-1h7V5h-7V3h-2v2H9L6,8l3,3h6v1H8v6h7v11h2V18h6l3-3L23,12z M9.828,9l-1-1l1-1H22v2 H9.828z M22.172,16H10v-2h12.172l1,1L22.172,16z"/>
+                </svg>
+              </div> 
+            </div>
+            <div class="rectangular-block" 
+                style="top: 8em; 
+                        left: 5.5em;
+                        background-color: #877622;">
+              <span style="float:right">
+                <b style="font-size:2.618em;">E</b> 
+              </span>
+              <div class="block-content"> 
+                <p><b>E is for “Escalations.”</b>
+                  <br>
+                  It's valuable to know about changes in urgency and what provoked them.
+                  <br>
+                  Relevant facts include any reclassifications of problem severity, or the addition of new responders.
+                </p> 
+                <svg style="float: right;" fill="#FFFFFF" version="1.1" id="escalate-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3em" height="3em" viewBox="0 0 576.556 576.557" xml:space="preserve"><title>Escalate icon</title><g><g><g><path d="M25.812,362.18c9.663,6.625,21.026,10.127,32.859,10.127h52.383v141.798c0,32.058,26.082,58.14,58.14,58.14h238.167 c32.058,0,58.14-26.082,58.14-58.14V372.307h52.384c11.833,0,23.195-3.502,32.858-10.127 c8.913-6.109,15.942-14.595,20.331-24.536c4.388-9.943,5.919-20.854,4.427-31.557c-1.617-11.604-6.688-22.359-14.662-31.102 L331.232,23.271c-10.99-12.048-26.646-18.958-42.954-18.958c-16.308,0-31.964,6.91-42.955,18.959L15.717,274.985 c-7.975,8.742-13.045,19.497-14.662,31.102c-1.492,10.702,0.039,21.614,4.427,31.556C9.87,347.585,16.9,356.07,25.812,362.18z M47.368,303.855L276.975,52.142c3.034-3.326,7.169-4.989,11.304-4.989c4.134,0,8.269,1.663,11.303,4.989l229.607,251.714 c8.959,9.822,1.99,25.611-11.304,25.611h-79.924c-8.45,0-15.3,6.851-15.3,15.3v169.338c0,8.449-6.851,15.3-15.3,15.3H169.195 c-8.45,0-15.3-6.851-15.3-15.3V344.767c0-8.449-6.85-15.3-15.3-15.3H58.671C45.376,329.467,38.408,313.679,47.368,303.855z"/><path d="M407.362,572.744H169.195c-32.334,0-58.64-26.306-58.64-58.64V372.807H58.671c-11.935,0-23.395-3.532-33.142-10.215 c-8.989-6.161-16.08-14.719-20.506-24.747c-4.426-10.027-5.969-21.033-4.464-31.827c1.631-11.704,6.745-22.552,14.788-31.369 L244.954,22.935c11.085-12.152,26.876-19.122,43.324-19.122c16.448,0,32.238,6.97,43.323,19.122l229.607,251.714 c8.043,8.817,13.157,19.665,14.788,31.369c1.505,10.793-0.039,21.799-4.465,31.828c-4.427,10.028-11.518,18.586-20.506,24.746 c-9.746,6.683-21.206,10.215-33.141,10.215h-51.884v141.298C466.001,546.438,439.696,572.744,407.362,572.744z M288.278,4.812 c-16.168,0-31.689,6.851-42.585,18.796L16.086,275.322C8.18,283.99,3.153,294.652,1.55,306.156 c-1.479,10.609,0.039,21.427,4.389,31.284c4.351,9.858,11.321,18.271,20.156,24.327c9.58,6.567,20.844,10.039,32.576,10.039 h52.883v142.298c0,31.782,25.857,57.64,57.64,57.64h238.167c31.782,0,57.64-25.857,57.64-57.64V371.807h52.884 c11.731,0,22.996-3.472,32.575-10.039c8.835-6.056,15.805-14.468,20.157-24.326c4.35-9.858,5.867-20.677,4.389-31.285 c-1.604-11.504-6.63-22.167-14.536-30.834L330.863,23.608C319.966,11.663,304.446,4.812,288.278,4.812z M407.362,529.904H169.195 c-8.712,0-15.8-7.088-15.8-15.8V344.767c0-8.16-6.639-14.8-14.8-14.8H58.671c-6.352,0-11.89-3.609-14.455-9.42 c-2.564-5.811-1.499-12.335,2.782-17.028L276.605,51.805c2.987-3.274,7.241-5.152,11.673-5.152c4.431,0,8.686,1.878,11.672,5.152 l229.607,251.714c4.28,4.692,5.346,11.218,2.781,17.028s-8.104,9.42-14.454,9.42h-79.924c-8.161,0-14.8,6.64-14.8,14.8v169.338 C423.162,522.816,416.074,529.904,407.362,529.904z M288.278,47.652c-4.151,0-8.137,1.759-10.934,4.826L47.737,304.192 c-4.01,4.396-5.008,10.508-2.606,15.951c2.402,5.442,7.59,8.823,13.54,8.823h79.923c8.712,0,15.8,7.088,15.8,15.8v169.338 c0,8.16,6.639,14.8,14.8,14.8h238.167c8.161,0,14.8-6.64,14.8-14.8V344.767c0-8.712,7.088-15.8,15.8-15.8h79.924 c5.949,0,11.137-3.381,13.539-8.824c2.402-5.442,1.404-11.555-2.604-15.95L299.212,52.479 C296.415,49.412,292.429,47.652,288.278,47.652z"/></g></g></g>
+                </svg>
+              </div> 
+            </div>
+            <div class="rectangular-block" 
+                style="top: 2em; 
+                        left: 1em;"> 
+              <span style="float:right">
+                <b style="font-size:2.618em;">B</b> 
+              </span>
+              <div class="block-content"> 
+                <p><b>B is for “Beginning.”</b>
                 <br>
-                It’s important to record the point at which the event was resolved. 
+                It's important to capture how the incident began and why a response was required.
                 <br>
-                Relevant facts include the factors which led the response team to determine the issue had ended, and whether any follow-up communications occurred.
-              </p> 
-              <svg style="float: right;" fill="#FFFFFF" width="75px" height="75px" viewBox="0 3 24 24" xmlns="http://www.w3.org/2000/svg"><title>Resolve icon</title><path d="M8.591,20.706a1,1,0,0,0,1.385.03l12.7-11.674a1,1,0,0,0,.061-1.412L18.785,3.325a1,1,0,0,0-1.415-.061l-7.865,7.23L6.844,7.827a1.03,1.03,0,0,0-1.416,0L1.292,11.974a1,1,0,0,0,0,1.412ZM6.136,9.949l2.631,2.637a1,1,0,0,0,1.384.031l7.834-7.2,2.6,2.849L9.33,18.614,3.412,12.68Z"/>
-              </svg>
-            </div> 
+                Relevant facts include how the problem was discovered, and what undesirable behaviour was observed.
+                </p> 
+                <svg style="float: right;" fill="#FFFFFF" width="4.5em" height="4.5em" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Begin icon</title><path d="M7.555,3.168A1,1,0,0,0,6,4V20a1,1,0,0,0,1.555.832l12-8a1,1,0,0,0,0-1.664ZM8,18.131V5.869L17.2,12Z"/>
+                </svg>
+              </div> 
+            </div>
           </div>
-          <div class="rectangular-block" 
-               style="top: 300px; 
-                      left: 200px;
-                      background-color: #C44F63; "> 
-            <span style="float:right">
-              <b style="font-size:2.618em;">A</b> 
-            </span>
-            <div class="block-content"> 
-              <p><b>A is for “Actions.”</b>
-                <br>
-                It’s illuminating to highlight the measures taken by the response team to resolve the incident.
-                <br>
-                Relevant facts include any workarounds attempted, decisions made, problems solved, or processes started.
-              </p> 
-              <svg style="float: right;" version="1.1" id="Action" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80px" height="80px" viewBox="0 0 32 32" xml:space="preserve"><title>Action icon</title><style type="text/css"> .linesandangles_een{fill:#FFFFFF;} </style><path class="linesandangles_een" d="M23,12h-6v-1h7V5h-7V3h-2v2H9L6,8l3,3h6v1H8v6h7v11h2V18h6l3-3L23,12z M9.828,9l-1-1l1-1H22v2 H9.828z M22.172,16H10v-2h12.172l1,1L22.172,16z"/>
-              </svg>
-            </div> 
+          <p style="text-align:center;">
+            <b>Figure 1: The B.E.A.R. mnemonic for identifying key facts.</b>
+          </p>
+          <br>
+          <hr style="width:100%; height:6px; background-color: #EEEEEE; border:none;">
+          <div class="text-container">
+            <div class="text-item">
+              <h4>
+                <svg height="1em" width="1em" version="1.1" id="_x32_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><title>Key icon</title><g id="SVGRepo_iconCarrier_2"><style type="text/css"> .st0{fill:#000000;}</style><g><path class="st0" d="M491.103,490.634l-12.05-86.739c-0.925-6.66-6.167-11.902-12.85-12.818l-33.622-4.655l-0.016-0.023 l-4.646-33.598c-0.916-6.676-6.166-11.934-12.843-12.843l-22.182-3.064c-6.731-0.932-12.02-6.26-12.874-12.999l-7.193-56.494 c-0.423-3.322-1.927-6.378-4.286-8.744l-35.769-35.762l-89.129,89.137l195.559,195.566c3.416,3.416,8.267,4.983,13.03,4.208 l26.351-4.247C486.66,506.258,492.224,498.736,491.103,490.634z M445.367,467.456L279.6,301.696l12.826-12.826l165.768,165.76 L445.367,467.456z"></path><path class="st0" d="M369.159,133.852L241.801,6.493c-8.658-8.658-22.7-8.658-31.358,0L27.241,189.703 c-8.65,8.65-8.65,22.691,0,31.342L154.6,348.412c8.666,8.658,22.699,8.658,31.358,0L369.159,165.21 C377.818,156.552,377.818,142.51,369.159,133.852z M205.201,133.499l-50.954,50.954c-7.569,7.57-19.855,7.57-27.432-0.008 c-7.577-7.576-7.57-19.862-0.008-27.432l50.962-50.954c7.569-7.57,19.847-7.577,27.432,0.008 C212.771,113.636,212.771,125.931,205.201,133.499z"></path></g></g></svg>
+                Key Point: Facts can be collected from many sources, but focus your attention on meaningful events.
+              </h4>
+            </div>
           </div>
-          <div class="rectangular-block" 
-               style="top: 175px; 
-                      left: 125px;
-                      background-color: #877622;">
-            <span style="float:right">
-              <b style="font-size:2.618em;">E</b> 
-            </span>
-            <div class="block-content"> 
-              <p><b>E is for “Escalations.”</b>
-                <br>
-                It's valuable to know about changes in urgency and what provoked them.
-                <br>
-                Relevant facts include any reclassifications of problem severity, or the addition of new responders.
-              </p> 
-              <svg style="float: right;" fill="#FFFFFF" version="1.1" id="escalate-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="60px" viewBox="0 0 576.556 576.557" xml:space="preserve"><title>Escalate icon</title><g><g><g><path d="M25.812,362.18c9.663,6.625,21.026,10.127,32.859,10.127h52.383v141.798c0,32.058,26.082,58.14,58.14,58.14h238.167 c32.058,0,58.14-26.082,58.14-58.14V372.307h52.384c11.833,0,23.195-3.502,32.858-10.127 c8.913-6.109,15.942-14.595,20.331-24.536c4.388-9.943,5.919-20.854,4.427-31.557c-1.617-11.604-6.688-22.359-14.662-31.102 L331.232,23.271c-10.99-12.048-26.646-18.958-42.954-18.958c-16.308,0-31.964,6.91-42.955,18.959L15.717,274.985 c-7.975,8.742-13.045,19.497-14.662,31.102c-1.492,10.702,0.039,21.614,4.427,31.556C9.87,347.585,16.9,356.07,25.812,362.18z M47.368,303.855L276.975,52.142c3.034-3.326,7.169-4.989,11.304-4.989c4.134,0,8.269,1.663,11.303,4.989l229.607,251.714 c8.959,9.822,1.99,25.611-11.304,25.611h-79.924c-8.45,0-15.3,6.851-15.3,15.3v169.338c0,8.449-6.851,15.3-15.3,15.3H169.195 c-8.45,0-15.3-6.851-15.3-15.3V344.767c0-8.449-6.85-15.3-15.3-15.3H58.671C45.376,329.467,38.408,313.679,47.368,303.855z"/><path d="M407.362,572.744H169.195c-32.334,0-58.64-26.306-58.64-58.64V372.807H58.671c-11.935,0-23.395-3.532-33.142-10.215 c-8.989-6.161-16.08-14.719-20.506-24.747c-4.426-10.027-5.969-21.033-4.464-31.827c1.631-11.704,6.745-22.552,14.788-31.369 L244.954,22.935c11.085-12.152,26.876-19.122,43.324-19.122c16.448,0,32.238,6.97,43.323,19.122l229.607,251.714 c8.043,8.817,13.157,19.665,14.788,31.369c1.505,10.793-0.039,21.799-4.465,31.828c-4.427,10.028-11.518,18.586-20.506,24.746 c-9.746,6.683-21.206,10.215-33.141,10.215h-51.884v141.298C466.001,546.438,439.696,572.744,407.362,572.744z M288.278,4.812 c-16.168,0-31.689,6.851-42.585,18.796L16.086,275.322C8.18,283.99,3.153,294.652,1.55,306.156 c-1.479,10.609,0.039,21.427,4.389,31.284c4.351,9.858,11.321,18.271,20.156,24.327c9.58,6.567,20.844,10.039,32.576,10.039 h52.883v142.298c0,31.782,25.857,57.64,57.64,57.64h238.167c31.782,0,57.64-25.857,57.64-57.64V371.807h52.884 c11.731,0,22.996-3.472,32.575-10.039c8.835-6.056,15.805-14.468,20.157-24.326c4.35-9.858,5.867-20.677,4.389-31.285 c-1.604-11.504-6.63-22.167-14.536-30.834L330.863,23.608C319.966,11.663,304.446,4.812,288.278,4.812z M407.362,529.904H169.195 c-8.712,0-15.8-7.088-15.8-15.8V344.767c0-8.16-6.639-14.8-14.8-14.8H58.671c-6.352,0-11.89-3.609-14.455-9.42 c-2.564-5.811-1.499-12.335,2.782-17.028L276.605,51.805c2.987-3.274,7.241-5.152,11.673-5.152c4.431,0,8.686,1.878,11.672,5.152 l229.607,251.714c4.28,4.692,5.346,11.218,2.781,17.028s-8.104,9.42-14.454,9.42h-79.924c-8.161,0-14.8,6.64-14.8,14.8v169.338 C423.162,522.816,416.074,529.904,407.362,529.904z M288.278,47.652c-4.151,0-8.137,1.759-10.934,4.826L47.737,304.192 c-4.01,4.396-5.008,10.508-2.606,15.951c2.402,5.442,7.59,8.823,13.54,8.823h79.923c8.712,0,15.8,7.088,15.8,15.8v169.338 c0,8.16,6.639,14.8,14.8,14.8h238.167c8.161,0,14.8-6.64,14.8-14.8V344.767c0-8.712,7.088-15.8,15.8-15.8h79.924 c5.949,0,11.137-3.381,13.539-8.824c2.402-5.442,1.404-11.555-2.604-15.95L299.212,52.479 C296.415,49.412,292.429,47.652,288.278,47.652z"/></g></g></g>
-              </svg>
-            </div> 
-          </div>
-          <div class="rectangular-block" 
-               style="top: 50px; 
-                      left: 50px;"> 
-            <span style="float:right">
-              <b style="font-size:2.618em;">B</b> 
-            </span>
-            <div class="block-content"> 
-              <p><b>B is for “Beginning.”</b>
-              <br>
-              It's important to capture how the incident began and why a response was required.
-              <br>
-              Relevant facts include how the problem was discovered, and what undesirable behaviour was observed.
-              </p> 
-              <svg style="float: right;" fill="#FFFFFF" width="80px" height="80px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Begin icon</title><path d="M7.555,3.168A1,1,0,0,0,6,4V20a1,1,0,0,0,1.555.832l12-8a1,1,0,0,0,0-1.664ZM8,18.131V5.869L17.2,12Z"/>
-              </svg>
-            </div> 
-          </div>
-        </div>
-        <p style="text-align:center;">
-          <b>Figure 1: The B.E.A.R. mnemonic for identifying key facts.</b>
-        </p>
-        <br>
-        <hr style="width:100%; height:6px; background-color: #EEEEEE; border:none;">
-        <div class="text-container">
-          <div class="text-item">
-            <h4>
-              <svg height="20px" width="20px" version="1.1" id="_x32_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><title>Key icon</title>
-                <g id="SVGRepo_iconCarrier_2">
-                  <style type="text/css"> .st0{fill:#000000;}
-                  </style>
-                  <g>
-                    <path class="st0" d="M491.103,490.634l-12.05-86.739c-0.925-6.66-6.167-11.902-12.85-12.818l-33.622-4.655l-0.016-0.023 l-4.646-33.598c-0.916-6.676-6.166-11.934-12.843-12.843l-22.182-3.064c-6.731-0.932-12.02-6.26-12.874-12.999l-7.193-56.494 c-0.423-3.322-1.927-6.378-4.286-8.744l-35.769-35.762l-89.129,89.137l195.559,195.566c3.416,3.416,8.267,4.983,13.03,4.208 l26.351-4.247C486.66,506.258,492.224,498.736,491.103,490.634z M445.367,467.456L279.6,301.696l12.826-12.826l165.768,165.76 L445.367,467.456z"></path><path class="st0" d="M369.159,133.852L241.801,6.493c-8.658-8.658-22.7-8.658-31.358,0L27.241,189.703 c-8.65,8.65-8.65,22.691,0,31.342L154.6,348.412c8.666,8.658,22.699,8.658,31.358,0L369.159,165.21 C377.818,156.552,377.818,142.51,369.159,133.852z M205.201,133.499l-50.954,50.954c-7.569,7.57-19.855,7.57-27.432-0.008 c-7.577-7.576-7.57-19.862-0.008-27.432l50.962-50.954c7.569-7.57,19.847-7.577,27.432,0.008 C212.771,113.636,212.771,125.931,205.201,133.499z">
-                    </path>
-                  </g>
-                </g>
-              </svg>
-              Key Point: Facts can be collected from many sources, but focus your attention on meaningful events.
-            </h4>
-          </div>
-        </div>
-        <br>
-        <hr style="width:100%; height:6px; background-color: #EEEEEE; border:none;">
-        <div class="grid-container-two">
-          <div>
-            <a href="unit2lesson1topic2.html" class="button"><b> &#8592; Back: Factual Data </b></a>
-          </div>
-          <div>
-            <a href="unit2lesson1topic4.html" class="button"><b> Next: Incident Timeline &#8594; </b></a>
+          <br>
+          <hr style="width:100%; height:6px; background-color: #EEEEEE; border:none;">
+          <div class="grid-container-two">
+            <div>
+              <a href="unit2lesson1topic2.html" class="button"><b> &#8592; Back: Factual Data </b></a>
+            </div>
+            <div>
+              <a href="unit2lesson1topic4.html" class="button"><b> Next: Incident Timeline &#8594; </b></a>
+            </div>
           </div>
         </div>
       </div>
