@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:01.000 --> 00:00:04.500
+We can adapt H W Heinrich’s five domino model of accident causation 
+
+00:00:04.501 --> 00:00:09.500
+to visualise an IT incident cascading from a single causal event
+
+00:00:09.501 --> 00:00:16.500
+Henrich imagined an incident to be the natural culmination of a series of events which occur in a fixed and logical order
+
+00:00:16.501 --> 00:00:20.500
+He pictured these events as a row of standing dominoes, 
+
+00:00:20.501 --> 00:00:24.500
+aligned so that the fall of the first domino causes the fall of the entire row
+
+00:00:24.501 --> 00:00:29.500
+For example, one event might be a gap in how the performance of our system is documented
+
+00:00:29.501 --> 00:00:36.500
+Without adequate documentation for this part of the system, there is a risk of introducing a performance bug
+
+00:00:36.501 --> 00:00:41.500
+If the performance bug is missed in the testing phase then it will be released to the live system
+
+00:00:41.501 --> 00:00:46.500
+If enough users trigger the bug, then the system’s performance will degrade
+
+00:00:46.501 --> 00:00:48.500
+If the system continues to deteriorate
+
+00:00:48.501 --> 00:00:53.500
+then eventually the system will become unstable and there will be a widespread outage
+
+00:00:53.501 --> 00:00:59.500
+Retracing this chain of events will lead us to the root cause

@@ -1,0 +1,62 @@
+WEBVTT
+
+00:00:01.000 --> 00:00:04.500
+We can adapt James Reason’s Swiss cheese model of system accidents 
+
+00:00:04.501 --> 00:00:09.500
+to visualise how multiple conditions must align in order for an IT incident to transpire
+
+00:00:09.501 --> 00:00:12.500
+A complex system, like an IT organisation
+
+00:00:12.501 --> 00:00:17.500
+has multiple layers designed to prevent hazards from causing an incident
+
+00:00:17.501 --> 00:00:21.500
+These defenses might include engineering safeguards
+
+00:00:21.501 --> 00:00:24.500
+like code reviews and design practices
+
+00:00:24.501 --> 00:00:26.500
+And quality safeguards
+
+00:00:26.501 --> 00:00:29.500
+like user inspection and automated testing
+
+00:00:29.501 --> 00:00:31.500
+And operational safeguards
+
+00:00:31.501 --> 00:00:34.500
+like platform health and monitoring procedures
+
+00:00:34.501 --> 00:00:37.500
+However, these defences are not perfect
+
+00:00:37.501 --> 00:00:39.500
+and like a slice of Swiss cheese
+
+00:00:39.501 --> 00:00:42.500
+each layer has inherent weaknesses or "holes" 
+
+00:00:42.501 --> 00:00:46.500
+These holes can allow hazards to pass through
+
+00:00:46.501 --> 00:00:50.500
+A design flaw in the software might get caught in code review
+
+00:00:50.501 --> 00:00:54.500
+A software bug might be missed in code review, but caught in testing
+
+00:00:54.501 --> 00:00:42.500
+And occasionally, a combination of factors can line up 
+
+00:00:58.501 --> 00:01:02.500
+and allow a hazard to pass through all of the system's defences
+
+00:01:02.501 --> 00:01:04.500
+By understanding how these layers can fail
+
+00:01:04.501 --> 00:01:10.500
+organisations can work to identify and address the weaknesses in their systems
+
