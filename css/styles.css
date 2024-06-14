@@ -143,8 +143,8 @@
   /* Responsive layout breakpoints
      ----------------------------- */
   
-  /* When the screen is less than 801px (tablet) wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 801px) {
+  /* When the screen is less than 1008px (tablet) wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 1008px) {
     .row {   
       flex-direction: column;
     }
@@ -155,8 +155,8 @@
     }
   }
   
-  /* When the screen is less than 480px (smartphone) wide, make the navigation links stack on top of each other instead of next to each other */
-  @media screen and (max-width: 480px) {
+  /* When the screen is less than 640px (smartphone) wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 640px) {
     .navbar a {
       float: none;
       width:100%;
@@ -169,7 +169,7 @@
     
     table thead {
       border: none;
-      clip: rect(0 0 0 0);
+      clip: rect(0, 0, 0, 0);
       height: 1px;
       margin: -1px;
       overflow: hidden;
@@ -290,7 +290,6 @@
     padding: calc(8px + 1.5625vw); /* https://matthewjamestaylor.com/responsive-padding */
     padding-right: 1px;
     background-color: var(--colour-light-grey);
-    color: var(--colour-light-grey);
     overflow: hidden;
   }
 
@@ -874,7 +873,7 @@
 
   .carousel-open:checked + .carousel-item {
     position: static;
-    opacity: 100;
+    opacity: 1;
   }
 
   .carousel-item {
